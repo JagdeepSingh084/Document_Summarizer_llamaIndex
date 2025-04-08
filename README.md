@@ -1,4 +1,4 @@
-##Startup Project Assistant
+# Startup Project Assistant
 
 This Smart job finder tool will help the user to find the perfect startup from a ppt which have various different startup projects to apply for depending upon the past experience and resume supplied in docs and pdf documents.
 
@@ -6,7 +6,7 @@ This POC demonstrate the llamaIndex implementation for summarizing and searching
 
 Important parameters:
 
-# Configurations
+## Configurations
 CONFIG = {
     "DIRECTORY_PATH": "D:\\AppBulls\\LLM Application Frameworks\\llama_index\\llamaIndex_modules\\Directory_Summarizer\\documents",
     "file_extensions": ['.docx', '.pptx', '.txt', '.pdf'],
@@ -18,17 +18,17 @@ CONFIG = {
 }
 
 
-query_mode  = aquery() # Treat new query as fresh query with considering previous query results
+**query_mode**  = aquery() # Treat new query as fresh query with considering previous query results
 
-Agent = functionAgent
+**Agent** = functionAgent
 
-INPUT Documents:
+### INPUT Documents:
 
 Startup_projects.ppt
 Past_experience.docs
 Resume.pdf
 
-User Input:
+#### User Input:
 Job Projects Assistant (type 'exit' to quit)
 Some example queries you can try:     
 1. What startups match my skills and experience?
@@ -36,10 +36,10 @@ Some example queries you can try:
 3. Which startup would be the best fit for me?
 4. bye
 
-Output:
-You: what startup projects present in the pptx file should I apply for what perfectly matches with my skills and experience provided in docs and pdf files formats
+#### Output:
+**You**: what startup projects present in the pptx file should I apply for what perfectly matches with my skills and experience provided in docs and pdf files formats
 
-Assistant: Based on the information extracted from the documents, here are some startup projects from the "Deep Tech Startups Session IV" presentation that align well with your skills and experience as a Data Science Intern specializing in AI and backend development:
+**Assistant**: Based on the information extracted from the documents, here are some startup projects from the "Deep Tech Startups Session IV" presentation that align well with your skills and experience as a Data Science Intern specializing in AI and backend development:
 
 1. AI Enabled Technologies
    - AI-based Sorting Machine Your experience with AI and machine learning models like KNN, as well as your work with Langchain for creating AI agents, makes you a good fit for projects involving AI-based sorting and classification.
